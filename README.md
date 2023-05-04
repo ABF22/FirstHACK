@@ -7,7 +7,7 @@
 
 ## How to run the server
 - Make an instance in `elephantSQL`
-- Make a `.env` file and put DB_URL = <The unique URL for your elephantSQL instance>
+- Make a `.env` file and put DB_URL = <>The unique URL for your elephantSQL instance<>
 - Run `npm run setupdb` - this will setup the database
 - Now you can run `npm run dev` and experince the joys of posting your deepest darkest secrets!!! :D
 
