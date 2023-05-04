@@ -18,5 +18,6 @@
 - searching via date and time
 ### Client side
 - needs to look prettier 
+- posts cannot be seen
 
 
