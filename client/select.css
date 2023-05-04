@@ -1,0 +1,37 @@
+.container{
+flex-direction: column;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 200px;
+}   
+
+body{
+    background-color: #c848e1;
+    color: rgb(236, 217, 232);
+}
+
+
+.navbar{
+    background: linear-gradient(to top,#c848e1, #4c1555)
+    }
+
+
+
+
+.container_post {
+    /* margin-top: 200px; */
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red;   */
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 500px;
+    position: relative;
+    margin: auto;
+    margin-top: 200px;
+    max-width: 200px;
+    /* position: absolute; */
+}
