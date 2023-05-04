@@ -11,12 +11,12 @@
 - Run `npm run setupdb` - this will setup the database
 - Now you can run `npm run dev` and experince the joys of posting your deepest darkest secrets!!! :D
 
-##bugs to fix
+## bugs to fix
 
-###Server side
+### Server side
 - Debugging on update, some issues remain.
 - searching via date and time
-###Client side
+### Client side
 - needs to look prettier 
 
 
