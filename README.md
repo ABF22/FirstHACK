@@ -1,7 +1,9 @@
 # FirstHACK -athon
 
 ##Server side
-- Debugging on update still needed
+- Debugging on update still needed.
+- searching via date and time
+- listing them by recent
 
 ##client side
 - needs to be made
