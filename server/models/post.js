@@ -10,7 +10,7 @@ class Post {
     }
 
     static async getAll() {
-        const response = await db.query("SELECT * FROM post");
+        const response = await db.query("SELECT * FROM post ORDER BY post_date");
         return response.rows.map(p => new Post(p));
     }
 
@@ -22,13 +22,13 @@ class Post {
         return new Post(response.rows[0]);
     }
     
-    static async update(data) {
+    static async update(id,data) {
         const { title, content } = data;
-        const response = await db.query("UPDATE post SET content = $1 || title = $2 WHERE post_id = $3 RETURNING *;",[title, content, this.id])
+        const response = await db.query("UPDATE post SET  title = $2 || content = $3 WHERE post_id = $1 RETURNING *;",[id, title, content])
         if (response.rows.length != 1) {
             throw new Error("Unable to update post.")
         }
-        return new Snack(response.rows[0]);
+        return new Post(response.rows[0]);
     }
 
     static async create(data) {
